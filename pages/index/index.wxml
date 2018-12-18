@@ -1,0 +1,35 @@
+<!-- index.wxml -->
+<view class="container">
+    <view class="content">
+        <view class="screen-container">
+            <view class="inputContent">{{inputText}}</view>
+            <view class="screen">{{result}}</view>
+        </view>
+        <view class='btns'>
+            <view class="btnGroup">
+                <button class="item gray" bindtap="clickButton" id="{{fuqin}}">父</button>
+                <button class="item gray" bindtap="clickButton" id="{{muqin}}">母</button>
+            </view>
+            <view class="btnGroup">
+                <button class="item gray" disabled="{{husbandBtnEnabled}}" bindtap="clickButton" id="{{zhangfu}}">夫</button>
+                <button class="item gray" disabled="{{wifeBtnEnabled}}" bindtap="clickButton" id="{{qizi}}">妻</button>
+                <button class="item gray" bindtap="clickButton" id="{{erzi}}">子</button>
+                <button class="item gray" bindtap="clickButton" id="{{nver}}">女</button>
+            </view>
+            <view class="btnGroup">
+                <button class="item gray" bindtap="clickButton" id="{{gege}}">兄</button>
+                <button class="item gray" bindtap="clickButton" id="{{didi}}">弟</button>
+                <button class="item gray" bindtap="clickButton" id="{{jiejie}}">姐</button>
+                <button class="item gray" bindtap="clickButton" id="{{meimei}}">妹</button>
+            </view>
+            <view class="btnGroup">
+                <button class="item gray" bindtap="clickButton" id="{{ce}}">CE</button>
+                <button class="item gray" bindtap="clickButton" id="{{ac}}">AC</button>
+                <button class="item {{isChecked ? 'orange' : 'gray'}}" bindtap="clickButton" id="{{convert}}">
+                        <image class= 'convertBtn' src="../../imgs/{{isChecked ? 'Convert_Checked@2x.png' : 'Convert@2x.png'}}"></image>
+          </button>
+                <button class="item gray" bindtap="clickButton" id="{{dengyu}}">=</button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,79 @@
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50rpx;
+}
+
+.screen-container {
+    padding-top: 30rpx;
+    padding-left: 20rpx;
+    padding-right: 25rpx;
+    margin-bottom: 20rpx;
+    text-align: right;
+}
+
+.screen {
+    width: 710rpx;
+    height: 30%;
+    font-size: 35px;
+    font-weight: 500;
+
+}
+
+.inputContent {
+    width: 710rpx;
+    height: 30%;
+    font-size: 23px;
+    font-weight: 500;
+    color: #C6C6C6;
+}
+
+.btnGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+button::after{ border: none; }
+
+.item {
+    height: 160rpx;
+    width: 160rpx;
+    margin: 10rpx;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 160rpx;
+    font-size: 23px;
+    justify-content: center;
+    align-items:center;
+  display: flex;
+}
+
+.orange {
+    color: #fef4e9;
+    background: #f78d1d;
+}
+
+.gray {
+    color: black;
+    background: #e1e1e1;
+}
+
+.convertBtn{
+    height: 62rpx;
+    width: 62rpx;
+}
+
+.gray:active,
+.orange:active {
+    opacity: 0.5;
+}
